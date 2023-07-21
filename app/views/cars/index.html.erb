@@ -1,12 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Cars</h1>
-
+<img src="../assets/cars.png" alt="image of a car" height= 250px ; width=350px>
 <div id="cars">
   <% @cars.each do |car| %>
     <%= render car %>
     <p>
-      <%= link_to "Show this car", car %>
+      <%= link_to "Show this car", cars_path, method: :get %>
     </p>
   <% end %>
 </div>
