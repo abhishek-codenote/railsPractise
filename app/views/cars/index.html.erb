@@ -1,7 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Cars</h1>
-<img src="../assets/cars.png" alt="image of a car" height= 250px ; width=350px>
 <div id="cars">
   <% @cars.each do |car| %>
     <%= render car %>
@@ -11,5 +10,4 @@
 </div>
 
 <%= link_to "New car", new_car_path %>
-<P style= "color: red">this line is written here to check merging of branches in git ... this line is written in emergency fix branch
-    </p>
+
